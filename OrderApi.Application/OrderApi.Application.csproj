@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OrderApi.Infastructure\OrderApi.Infastructure.csproj" />
+    <ProjectReference Include="..\Shared\HasanFurkanFidan.UdemyCourse.SHARED.csproj" />
   </ItemGroup>
 
 </Project>

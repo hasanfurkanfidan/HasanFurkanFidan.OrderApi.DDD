@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi.Application", "OrderApi.Application\OrderApi.Application.csproj", "{1DA459CE-C473-47CF-8DC6-02C69A9F1FE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi.Application", "OrderApi.Application\OrderApi.Application.csproj", "{1DA459CE-C473-47CF-8DC6-02C69A9F1FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi.Domain", "OrderApi.Domain\OrderApi.Domain.csproj", "{795CB8D9-4755-46DE-A48E-716C479E3B71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi.Domain", "OrderApi.Domain\OrderApi.Domain.csproj", "{795CB8D9-4755-46DE-A48E-716C479E3B71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi.Domain.Core", "OrderApi.Core\OrderApi.Domain.Core.csproj", "{A26C1573-F924-422C-8AE5-221D567AC0FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi.Domain.Core", "OrderApi.Core\OrderApi.Domain.Core.csproj", "{A26C1573-F924-422C-8AE5-221D567AC0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi.Infastructure", "OrderApi.Infastructure\OrderApi.Infastructure.csproj", "{2629C684-A822-45DD-A18D-6EC364E0C9BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi.Infastructure", "OrderApi.Infastructure\OrderApi.Infastructure.csproj", "{2629C684-A822-45DD-A18D-6EC364E0C9BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi.WebApi", "OrderApi.WebApi\OrderApi.WebApi.csproj", "{3B268469-CCB6-4E83-8F79-ECEBEB4AE3E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi.WebApi", "OrderApi.WebApi\OrderApi.WebApi.csproj", "{3B268469-CCB6-4E83-8F79-ECEBEB4AE3E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7E9648DF-19BF-4A0A-B34A-B9011E7C2DF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HasanFurkanFidan.UdemyCourse.SHARED", "Shared\HasanFurkanFidan.UdemyCourse.SHARED.csproj", "{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{3B268469-CCB6-4E83-8F79-ECEBEB4AE3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B268469-CCB6-4E83-8F79-ECEBEB4AE3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B268469-CCB6-4E83-8F79-ECEBEB4AE3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD2C2C69-1010-4CFB-9E2F-2EA0615E831D} = {7E9648DF-19BF-4A0A-B34A-B9011E7C2DF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8FBECD6-953E-4AD3-8421-38FBC1A6CB26}

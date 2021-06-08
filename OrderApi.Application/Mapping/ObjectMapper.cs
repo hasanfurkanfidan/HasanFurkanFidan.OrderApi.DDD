@@ -18,6 +18,6 @@ namespace OrderApi.Application.Mapping
             return config.CreateMapper();
         });
 
-        public static IMapper mapper => lazy.Value;
+        public static IMapper Mapper => lazy.Value;
     }
 }
