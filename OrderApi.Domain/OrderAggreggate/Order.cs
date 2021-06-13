@@ -22,7 +22,10 @@ namespace OrderApi.Domain.OrderAggreggate
             BuyerId = buyerId;
             Adress = adress;
         }
+        public Order()
+        {
 
+        }
         public void AddOrderItem(string productId,string productName,decimal price,string pictureUrl)
         {
             var existProduct = _orderItems.Any(x => x.ProductId == productId);

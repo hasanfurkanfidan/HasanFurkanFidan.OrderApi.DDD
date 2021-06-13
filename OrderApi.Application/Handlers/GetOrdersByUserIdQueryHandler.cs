@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Application.Handlers
 {
-    public class GetOrdersByUserIdQueryHandler : IRequestHandler<GetOrdersByUserIdQuery, Response<List<OrderDto>>
+    public class GetOrdersByUserIdQueryHandler : IRequestHandler<GetOrdersByUserIdQuery, Response<List<OrderDto>>>
     {
         private readonly OrderDbContext _context;
         public GetOrdersByUserIdQueryHandler(OrderDbContext context)
