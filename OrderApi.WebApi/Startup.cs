@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace OrderApi.WebApi
@@ -28,6 +30,11 @@ namespace OrderApi.WebApi
         {
 
             services.AddControllers();
+            services.AddHttpContextAccessor();
+
+            services.AddMediatR(typeof(Application.Handlers.CreateOrderCommandHandler).Assembly);
+            services.AddMediatR(typeof(Application.Handlers.GetOrdersByUserIdQueryHandler).Assembly);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OrderApi.WebApi", Version = "v1" });

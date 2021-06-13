@@ -15,13 +15,11 @@ namespace OrderApi.Application.Handlers
 {
     public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, Response<CreatedOrderDto>>
     {
-        private readonly OrderDbContext _context;
-        public CreateOrderCommandHandler(OrderDbContext context)
-        {
-            _context = context;
-        }
+       
         public async Task<Response<CreatedOrderDto>> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
+            var _context = new OrderDbContext();
+
             var newAddress = new Adress(city: request.AdressDto.City, district: request.AdressDto.District, street: request.AdressDto.Street, request.AdressDto.ZipCode, line: request.AdressDto.Line);
             var newOrder = new Order(request.BuyerId, newAddress);
 

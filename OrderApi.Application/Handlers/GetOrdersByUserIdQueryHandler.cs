@@ -17,13 +17,10 @@ namespace OrderApi.Application.Handlers
 {
     public class GetOrdersByUserIdQueryHandler : IRequestHandler<GetOrdersByUserIdQuery, Response<List<OrderDto>>>
     {
-        private readonly OrderDbContext _context;
-        public GetOrdersByUserIdQueryHandler(OrderDbContext context)
-        {
-            _context = context;
-        }
+        
         public async Task<Response<List<OrderDto>>> Handle(GetOrdersByUserIdQuery request, CancellationToken cancellationToken)
         {
+            var _context = new OrderDbContext();
             var orders = await _context.Orders.Include(p => p.OrderItems).Where(p => p.BuyerId == request.UserId).ToListAsync();
 
             if (orders.Count==0)
